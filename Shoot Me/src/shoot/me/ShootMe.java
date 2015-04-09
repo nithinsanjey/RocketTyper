@@ -218,7 +218,10 @@ public class ShootMe extends Applet implements Runnable,KeyListener  {
             g.setFont(new Font("TimesRoman", Font.PLAIN, 15));
             g.drawString("Level = "+level, 10,20);
             g.drawString("Points = "+point, 870,20);
+            if(timer<=5)
+                g.setColor(Color.red);
             g.drawString("Timer = "+timer, 450,50);
+            g.setColor(Color.black);
             g.drawString("Type the letters appearing in the boxes before the timer runs out", 250, 550);
             g.drawString("(esc) to quit & (enter) to restart", 400, 575);
         }
